@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap');
+
+/* Universal styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FDFFFC;
+}
+
+div {
+    text-align: center;
+}
+
+.buttonRestart { 
+    display: inline-block;
+    margin: 0.1%;
+    padding: 1%;
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: #FF9F1C;
+    
+    text-align: center;
+    font-size: 1.8vw;
+    color: rgb(240, 240, 240);
+
+    filter: drop-shadow(0px 0px 1px #161925);
+    transition: transform 0.5s;
+}
+
+button {
+    display: inline;
+    margin: 0.1%;
+    max-width: 50px;
+    max-height: 50px;
+
+    border: none;
+    border-radius: 10%;
+    background-color: #FF9F1C;
+    
+    text-align: center;
+    font-size: 1.8vw;
+    color: rgb(240, 240, 240);
+
+    filter: drop-shadow(0px 0px 1px #161925);
+    transition: background-color 1s;
+}
+
+ul {
+    color: white;
+    margin: auto;
+    list-style: none;
+    padding-left: 0%;
+
+    max-width: 400px;
+    max-height: 120px;
+    font-size: 1.8vw;
+}
+
+li {
+    margin-bottom: 5px;
+    transition: transform 0.5s, background-color 0.5s;
+}
+
+.disabled {
+    background-color: #FF9F1Cb3;
+    transform: scale(0.95);
+    filter: none;
+}
+
+input {
+    font-size: 1.8vw;
+
+    width: auto;
+    height: auto;
+
+    background-color: #E4FFD6;
+    border-style: solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+    border-style: groove;
+}
+
+/* Specific styling */
+.title {
+    font-weight: 900;
+    font-size: 1.8vw;
+    color: #141414;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 1.6vw;
+    color: #161925;
+}
+
+.normal {
+    font-weight: 500;
+    font-size: 1.8vw;
+}
+
+.grid {
+    display: flex;
+}
+
+.piece {
+    flex: 1;
+    margin: auto;
+}
+
+.lines {
+    display: inline;
+
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.red {
+    color: #D62828;
+}
+
+.orange {
+    color: #FF9F1C;
+}
+
+/* Media Styling */
+@media (max-width: 400px) {
+    .grid {
+        display: block;
+    }
+}
+
+/* Other */
+ul li:nth-child(1) { background-color: #FF9F1Cff; }
+ul li:nth-child(2) { background-color: #FF9F1Ce6; }
+ul li:nth-child(3) { background-color: #FF9F1Ccc; }
+ul li:nth-child(4) { background-color: #FF9F1Cb3; }
+ul li:nth-child(5) { background-color: #FF9F1C99; }
+
+ul li:hover {
+    transform: scale(1.15);
+    z-index: 100;
+    background-color: #FF9F1Cff;
+}
+
+button:hover {
+    transform: scale(1.05);
+    z-index: 100;
+}
