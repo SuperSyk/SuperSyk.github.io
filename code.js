@@ -207,7 +207,7 @@ buttons.onclick = function(event) {
 
 function restart() {
     lives = 10;
-    document.getElementById("lives").innerHTML = "❤️ " + lives;
+    document.getElementById("lives").innerHTML = "💖 " + lives;
     buttons.innerHTML = "";
     linesList.length = 0;
     imageValue = 0;
